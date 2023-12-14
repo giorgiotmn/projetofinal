@@ -21,14 +21,18 @@ a:link {
     text-decoration: none;
 } 
 
+body {
+    background-color: var(--main-color);
+}
+
 .header-div-imgs {
     display: flex;
     justify-content: space-between;
-    margin: 0px 3.875rem 17px 3.875rem;
+    padding: 0px 3.875rem 17px 3.875rem;
+    background-color: white;
 }
 
 #header-div-navigation {
-    background-color:#262C3A;
     border-top: 0.625rem solid var(--second-color);
 }
 
@@ -41,19 +45,17 @@ nav ul{
 
 }
 
-nav ul li {
+nav ul li a{
+    display: block;
     width: 21.875rem;
     height: 4.375rem;
     border-radius: 3.125rem;
     background-color: var(--second-color);
     text-shadow: -5px 4px rgba(0, 0, 0, 0.4);
     transition: transform .3s;
-    text-align: center;    
-}
-
-nav ul li a {
+    text-align: center;  
     color: var(--text-color);
-    font-size: 40px;
+    font-size: 40px;  
 }
 
 article {
