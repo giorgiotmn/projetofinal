@@ -101,9 +101,13 @@ p {
     flex-direction: row;
 }
 
-.card-right{
-    justify-content: flex-end;
+.cards:nth-child(2n + 1) .card-img{
+    order: 1;
+}
+
+.cards:nth-child(2n + 1) {
     text-align: end;
+    justify-content: flex-end;
 }
 
 .card-text{
@@ -136,7 +140,6 @@ p {
 }
 
 input:focus{
-    border: 0 none;
     outline: 0;
 }
 
