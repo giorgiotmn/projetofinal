@@ -63,19 +63,6 @@ article {
     padding: 5.625rem 13.75rem;
 }
 
-#article-content-home, 
-#article-content-characters, 
-#article-content-pokemons,
-#article-content-curiosities,
-#article-content-club {
-    background-color: var(--main-color);
-}
-
-#article-content-characters,
-#article-content-pokemons {
-    height: 100%;
-}
-
 #home-link {
     position: fixed;
     top: 85%;
