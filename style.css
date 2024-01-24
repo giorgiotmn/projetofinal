@@ -1,4 +1,4 @@
- :root {
+:root {
     --main-color: #c4e0fd;
     --text-color: black;
     --base-size: 1rem;
@@ -34,26 +34,118 @@ body {
     background-color: var(--main-color) ;
 }
 
-.section-home-div img {
-    width: 450px;
+.section-home-text {
+    padding: 0 12px;
+}
+
+.section-home-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.section-home-img img { 
+    width: 400px;
+}
+
+@media screen and (min-width: 600px) {
+    .section-home-img img {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .section-home-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .section-home-img {
+        display: flex;
+        justify-content: end;
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .section-home-img img { 
+        width: 450px;
+    }
+}
+
+.section-character {
+    background-color: white;
+    padding-top: 30px;
 }
 
 .section-character .container h2 {
-    padding-bottom: 65px;
-}
-
-.section-character-div-text {
-    padding-top: 40px;
-}
-
-.section-character-div-text h3 {
     padding-bottom: 20px;
 }
 
-.section-character-div-img img{
+.section-character-img { 
+    display: flex;
+    justify-content: center;
+    order: 3;
+    padding: 0 12px;
+    margin-bottom: 30px;
+}
+
+.section-character-img img{
     height: 340px;
     width: 210px;
 } 
+
+.section-character-text {
+    padding-top: 10px;
+}
+
+.section-character-text h3 {
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 600px){
+    .section-character {
+        margin: 20px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .section-character {
+        margin: 40px;
+    }
+
+    .section-character .container h2 {
+        padding-bottom: 40px;
+    }
+
+    .section-character-img {
+        width: 30%;
+        order: 0;
+        margin-bottom: 20px;
+    }
+
+    .section-character-text {
+        width: 60%;
+    }
+
+    .right-row {
+        display: flex;
+        justify-content: end;
+    }
+
+    .right-img {
+        order: 3;
+    }
+
+    .right-text {
+        text-align: end;
+    }
+}
 
 .section-pokemons-div  {
     padding-top: 80px;
@@ -71,10 +163,4 @@ body {
     border-radius: 50%;
     background-color: rgb(87, 70, 236);
     margin-left: 7px; 
-}
-
-@media (min-width: 768px) {
-    .section-character {
-        border-radius: 20px;
-    }
 }
