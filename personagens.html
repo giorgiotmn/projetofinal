@@ -3,68 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/pokeball.png"
-      type="image/x-icon"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <link rel="shortcut icon" href="./assets/images/pokeball.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="./assets/javascripts/script.js" defer></script>
-    <title>Pokémon</title>
+    <title>Pokémon | Personagens</title>
   </head>
   <body>
     <header class="p-1">
       <div class="px-3 py-2 text-white">
         <div class="container">
-          <div
-            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-          >
-            <a
-              href="./index.html"
-              class="d-flex align-items-center my-2 my-lg-0 me-lg-auto"
-            >
-              <img
-                src="./assets/images/pokeball.png"
-                alt=""
-                class="bi me-2"
-                width="50"
-                height="50"
-                role="img"
-              />
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="./index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto">
+              <img src="./assets/images/pokeball.png" alt="" class="bi me-2" width="50" height="50" role="img" />
             </a>
-            <ul
-              class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0"
-            >
-              <li class="nav-link text-black">
-                <a href="./index.html">HOME</a>
-              </li>
-              <li class="nav-link text-black">
-                <a href="./personagens.html">PERSONAGENS</a>
-              </li>
-              <li class="nav-link text-black">
-                <a href="./pokemons.html">POKÉMONS</a>
-              </li>
-              <li class="nav-link text-black">
-                <a href="./historia.html">HISTÓRIA</a>
-              </li>
-              <li class="nav-link text-black">
-                <a href="./jogos.html">JOGOS</a>
-              </li>
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0">
+              <a class="nav-bar-link m-3" href="./index.html">HOME</a>
+              <a class="nav-bar-link active text-white m-3" href="./personagens.html">PERSONAGENS</a>
+              <a class="nav-bar-link m-3" href="./pokemons.html">POKÉMONS</a>
+              <a class="nav-bar-link m-3" href="./historia.html">HISTÓRIA</a>
+              <a class="nav-bar-link m-3" href="./jogos.html">JOGOS</a>
             </ul>
           </div>
         </div>
@@ -72,19 +32,13 @@
     </header>
 
     <main>
-      <section class="section-home">
-        <div class="section-home-wrapper">
-          <div class="section-home-text home-padding">
-            <h1>Pokémon</h1>
-            <p>Projeto final do curso Desenvolvimento Web da CoderHouse!</p>
-          </div>
-          <div class="section-home-img home-padding">
-            <img src="./assets/images/pokemon.png" alt="" class=>
-          </div>
-        </div>
-      </section>
+      <div>
+        <a href="#character" class="top">
+          <img src="./assets/images/top.png" alt="arrow-up" />
+        </a>
+      </div>
 
-      <section class="section-character">
+      <section class="section-character" id="character">
         <div class="container">
           <h2>Personagens</h2>
           <div class="row">
@@ -93,12 +47,7 @@
             </div>
             <div class="section-character-text">
               <h3>Ash Ketchum</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia nulla quo dolorum expedita labore officiis delectus
-                eos. Magni deserunt est numquam reprehenderit, laborum veritatis
-                cumque!
-              </p>
+              <p>Ash Ketchum é o protagonista da série de anime Pokémon. Determinado a se tornar um Mestre Pokémon, Ash viaja por várias regiões, capturando e treinando Pokémon. Seu parceiro icônico é Pikachu, e ao longo da jornada, ele enfrenta desafios, faz amizades e busca conquistar as Ligas Pokémon. A personalidade otimista e a perseverança de Ash o tornaram um dos personagens mais reconhecíveis e queridos na cultura pop.</p>
             </div>
           </div>
         </div>
@@ -109,13 +58,8 @@
               <img src="./assets/images/mysty.png" alt="" />
             </div>
             <div class="section-character-text right-text">
-              <h3>Ash Ketchum</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia nulla quo dolorum expedita labore officiis delectus
-                eos. Magni deserunt est numquam reprehenderit, laborum veritatis
-                cumque!
-              </p>
+              <h3>Misty</h3>
+              <p>Misty, também conhecida como Kasumi no original japonês, é uma treinadora de água e líder de ginásio na série Pokémon. Ela é uma das primeiras companheiras de jornada de Ash Ketchum. Misty é especialista em Pokémon aquáticos e possui um carisma único. Ao longo da série, ela busca se tornar uma Mestra Pokémon da água, e sua personalidade forte e decidida a tornou uma figura querida entre os fãs.</p>
             </div>
           </div>
         </div>
@@ -126,25 +70,17 @@
               <img src="./assets/images/brok.png" alt="" />
             </div>
             <div class="section-character-text">
-              <h3>Ash Ketchum</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia nulla quo dolorum expedita labore officiis delectus
-                eos. Magni deserunt est numquam reprehenderit, laborum veritatis
-                cumque!
-              </p>
+              <h3>Brock</h3>
+              <p>Brock é um treinador de Pokémon e um líder de ginásio na série Pokémon. Ele é um amigo próximo de Ash Ketchum e um especialista em Pokémon do tipo pedra. Brock aspira a ser um Mestre Pokémon, mas seu verdadeiro sonho é se tornar um Criador Pokémon. Com habilidades culinárias excepcionais e um coração generoso, Brock é conhecido por sua lealdade aos amigos e por oferecer conselhos valiosos durante as jornadas de treinamento.</p>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="bg-white p-2">
+    <footer class="bg-white mt-3 p-2">
       <div class="container text-center">
-        <span
-          >Projeto desenvolvido por: Daniel, Larissa Teofilo e Patrick
-          Azevedo</span
-        >
+        <span>Projeto desenvolvido por: Daniel, Larissa Teofilo e Patrick Azevedo</span>
       </div>
     </footer>
   </body>

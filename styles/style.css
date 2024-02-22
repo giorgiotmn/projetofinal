@@ -3,7 +3,7 @@
   --text-color: black;
   --base-size: 1rem;
   --scale: 1.333;
-  
+
   --h1: calc(var(--h2) * var(--scale));
   --h2: calc(var(--h3) * var(--scale));
   --h3: calc(var(--h4) * var(--scale));
@@ -34,20 +34,45 @@ body {
   background-color: var(--main-color);
 }
 
-.section-home-wrapper { 
-  display: grid;
-  grid-template-rows: repeat(2, max-content);
+.nav-bar-link {
+  padding: 5px 15px;
+  border-radius: 25px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.active {
+  background-color: rgb(122, 190, 253);
+}
+
+.nav-bar-link:hover {
+  transform: scale(1.1);
 }
 
 .home-padding {
-  padding-right: calc(1.5rem * .5);
-  padding-left: calc(1.5rem * .5);
+  padding-right: calc(1.5rem * 0.5);
+  padding-left: calc(1.5rem * 0.5);
   margin-right: auto;
   margin-left: auto;
 }
 
+.section-home-wrapper {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(max-content, 1fr));
+}
+
 .section-home-img img {
-  width: 400px;
+  width: 350px;
+}
+
+@media screen and (min-width: 500px) {
+  .section-home-wrapper {
+    padding-left: 0;
+  }
+
+  .section-home-img img {
+    width: 400px;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -58,8 +83,8 @@ body {
 
 @media screen and (min-width: 992px) {
   .section-home-wrapper {
-    grid-template-columns: 1fr 1fr;
-    
+    grid-template-columns: 2fr 1fr;
+    padding-left: 50px;
   }
 
   .section-home-text {
@@ -136,15 +161,15 @@ body {
     order: 3;
   }
 
-  .right-text h3{
+  .right-text h3 {
     text-align: end;
   }
 
   .right-text {
     text-align: end;
   }
-
 }
+
 .section-pokemons-div {
   padding-top: 80px;
 }
@@ -159,37 +184,39 @@ body {
   padding: 7px;
   border: none;
   border-radius: 50%;
-  background-color: rgb(87, 70, 236);
+  background-color: rgba(54, 144, 228, 0.747);
   margin-left: 7px;
 }
 
-.historia {
+.section-history {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  padding-top: 30px;
 }
 
-.historia p {
+.section-history p {
   text-align: justify;
   width: 100%;
 }
 
-.historia h2,
+.section-history h2,
 h3,
 h4 {
   text-align: left;
   margin-bottom: 1rem;
 }
 
-.historia img {
+.section-history img {
   display: block;
   margin: auto;
   width: 80%;
   margin-bottom: 2rem;
   border-radius: 1rem;
-  margin-top: 7rem;
+  margin-top: 2rem;
 }
 
-#historia-first-img {
+#history-first-img {
   margin-top: 0;
 }
 
@@ -219,10 +246,20 @@ h4 {
   margin-top: 0;
 }
 
-.top img {
-  display: block;
+.top {
   position: fixed;
-  width: 40px;
-  top: 90%;
-  right: 0%;
+  bottom: 3%;
+  right: 3%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(54, 144, 228, 0.747);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top img {
+  width: 80%;
+  height: auto;
 }

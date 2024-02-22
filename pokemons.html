@@ -3,68 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/pokeball.png"
-      type="image/x-icon"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <link rel="shortcut icon" href="./assets/images/pokeball.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="./assets/javascripts/script.js" defer></script>
-    <title>Pokémon | Pokemons</title>
+    <title>Pokémon | Pokémons</title>
   </head>
   <body>
     <header class="p-1">
       <div class="px-3 py-2 text-white">
         <div class="container">
-          <div
-            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-          >
-            <a
-              href="./index.html"
-              class="d-flex align-items-center my-2 my-lg-0 me-lg-auto"
-            >
-              <img
-                src="./assets/images/pokeball.png"
-                alt=""
-                class="bi me-2"
-                width="50"
-                height="50"
-                role="img"
-              />
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="./index.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto">
+              <img src="./assets/images/pokeball.png" alt="" class="bi me-2" width="50" height="50" role="img" />
             </a>
-            <ul
-              class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0"
-            >
-              <li class="nav-link text-black">
-                <a href="./index.html">HOME</a>
-              </li>
-              <li class="nav-link text-black">
-                <a href="./personagens.html">PERSONAGENS</a>
-              </li>
-              <li class="nav-link text-black">
-                <a href="./pokemons.html">POKÉMONS</a>
-              </li>
-              <li class="nav-link text-black">
-                <a href="./historia.html">HISTÓRIA</a>
-              </li>
-              <li class="nav-link text-black">
-                <a href="./jogos.html">JOGOS</a>
-              </li>
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0">
+              <a class="nav-bar-link m-3" href="./index.html">HOME</a>
+              <a class="nav-bar-link m-3" href="./personagens.html">PERSONAGENS</a>
+              <a class="nav-bar-link active text-white m-3" href="./pokemons.html">POKÉMONS</a>
+              <a class="nav-bar-link m-3" href="./historia.html">HISTÓRIA</a>
+              <a class="nav-bar-link m-3" href="./jogos.html">JOGOS</a>
             </ul>
           </div>
         </div>
@@ -72,30 +32,18 @@
     </header>
 
     <main>
-      <section class="section-home">
-        <div class="section-home-wrapper">
-          <div class="section-home-text home-padding">
-            <h1>Pokémon</h1>
-            <p>Projeto final do curso Desenvolvimento Web da CoderHouse!</p>
-          </div>
-          <div class="section-home-img home-padding">
-            <img src="./assets/images/pokemon.png" alt="" class=>
-          </div>
-        </div>
-      </section>
+      <div>
+        <a href="#pokemons" class="top">
+          <img src="./assets/images/top.png" alt="arrow-up" />
+        </a>
+      </div>
 
-      <section class="section-search-pokemon p-5">
+      <section class="section-search-pokemon p-5" id="pokemons">
         <div class="container">
           <h2 class="pb-3">Pesquise o Pokémon</h2>
           <div class="section-pokemons-input">
-            <input
-              type="text"
-              name=""
-              id="input-search"
-              class="col-12 col-md-8 col-lg-6"
-              placeholder="Nome ou número"
-            />
-            <div class="d-flex justify-content-center d-md-inline p-3">
+            <input type="text" name="" id="input-search" class="col-8 col-md-8 col-lg-6" placeholder="Nome ou número" />
+            <div class="d-inline">
               <button class="text-center" id="button-search">
                 <img src="./assets/images/Vector.png" alt="" />
               </button>
@@ -105,32 +53,42 @@
 
         <div class="container pt-5">
           <div class="row">
-            <div class="section-search-pokemon-image col-12 col-lg-6 d-flex justify-content-center ">
-              <img src="assets/images/ash-holding-pokeball.png" alt="" width="500">
-            </div>
-
-            <div class=" col-12 col-lg-6">
+            <div class="col-12 col-lg-6">
               <div class="d-flex flex-column justify-content-center align-items-center">
                 <div class="pb-2">
-                  <img
-                    src="assets/images/default-1.jpeg"
-                    alt=""
-                    class="bg-white rounded-5 pokemon-img-search"
-                    width="400"
-                    height="400"
-                  />
-                </div>
-                <div>
-                  <p class="text-center">N° <span class="pokemon-id-search">0000</span></p>
-                  <h4 class="pokemon-name-search">Default</h4>
+                  <img src="assets/images/bulbasaur.png" alt="" class="bg-white rounded-5 pokemon-img-search" width="400" height="400" />
                 </div>
               </div>
             </div>
 
+            <div class="col-12 col-lg-6 d-flex align-items-center pt-4 pbmd-0">
+              <ul class="container list-group">
+                <li class="list-group-item">
+                  Nome:
+                  <span class="pokemon-name-search">Bulbasaur</span>
+                </li>
+                <li class="list-group-item">Id: <span class="pokemon-id-search">1</span></li>
+                <li class="list-group-item">
+                  Tipo:
+                  <span class="pokemon-type-search">Grass</span>
+                </li>
+                <li class="list-group-item">
+                  Habilidades:
+                  <span class="pokemon-abilities-search">Overgrow, Chlorophyll</span>
+                </li>
+                <li class="list-group-item">
+                  Altura:
+                  <span class="pokemon-height-search">7cm</span>
+                </li>
+                <li class="list-group-item">
+                  Peso:
+                  <span class="pokemon-weight-search">69g</span>
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
       </section>
-        
 
       <section class="section-pokemons p-5">
         <div class="container">
@@ -138,17 +96,10 @@
         </div>
         <div class="container">
           <div class="row">
-
             <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
               <div class="section-pokemons-div container d-flex flex-column justify-content-center align-items-center">
                 <div class="pb-2">
-                  <img
-                    src=""
-                    alt=""
-                    class="bg-white rounded-5"
-                    width="300"
-                    height="300"
-                  />
+                  <img src="" alt="" class="bg-white rounded-5" width="300" height="300" />
                 </div>
                 <div>
                   <p class="text-center">N° <span class="pokemon-id"></span></p>
@@ -160,13 +111,7 @@
             <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
               <div class="section-pokemons-div container d-flex flex-column justify-content-center align-items-center">
                 <div class="pb-2">
-                  <img
-                    src=""
-                    alt=""
-                    class="bg-white rounded-5"
-                    width="300"
-                    height="300"
-                  />
+                  <img src="" alt="" class="bg-white rounded-5" width="300" height="300" />
                 </div>
                 <div>
                   <p class="text-center">N° <span class="pokemon-id"></span></p>
@@ -178,13 +123,7 @@
             <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
               <div class="section-pokemons-div container d-flex flex-column justify-content-center align-items-center">
                 <div class="pb-2">
-                  <img
-                    src=""
-                    alt=""
-                    class="bg-white rounded-5"
-                    width="300"
-                    height="300"
-                  />
+                  <img src="" alt="" class="bg-white rounded-5" width="300" height="300" />
                 </div>
                 <div>
                   <p class="text-center">N° <span class="pokemon-id"></span></p>
@@ -196,13 +135,7 @@
             <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
               <div class="section-pokemons-div container d-flex flex-column justify-content-center align-items-center">
                 <div class="pb-2">
-                  <img
-                    src=""
-                    alt=""
-                    class="bg-white rounded-5"
-                    width="300"
-                    height="300"
-                  />
+                  <img src="" alt="" class="bg-white rounded-5" width="300" height="300" />
                 </div>
                 <div>
                   <p class="text-center">N° <span class="pokemon-id"></span></p>
@@ -214,13 +147,7 @@
             <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
               <div class="section-pokemons-div container d-flex flex-column justify-content-center align-items-center">
                 <div class="pb-2">
-                  <img
-                    src=""
-                    alt=""
-                    class="bg-white rounded-5"
-                    width="300"
-                    height="300"
-                  />
+                  <img src="" alt="" class="bg-white rounded-5" width="300" height="300" />
                 </div>
                 <div>
                   <p class="text-center">N° <span class="pokemon-id"></span></p>
@@ -232,13 +159,7 @@
             <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
               <div class="section-pokemons-div container d-flex flex-column justify-content-center align-items-center">
                 <div class="pb-2">
-                  <img
-                    src=""
-                    alt=""
-                    class="bg-white rounded-5"
-                    width="300"
-                    height="300"
-                  />
+                  <img src="" alt="" class="bg-white rounded-5" width="300" height="300" />
                 </div>
                 <div>
                   <p class="text-center">N° <span class="pokemon-id"></span></p>
@@ -250,13 +171,7 @@
             <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
               <div class="section-pokemons-div container d-flex flex-column justify-content-center align-items-center">
                 <div class="pb-2">
-                  <img
-                    src=""
-                    alt=""
-                    class="bg-white rounded-5"
-                    width="300"
-                    height="300"
-                  />
+                  <img src="" alt="" class="bg-white rounded-5" width="300" height="300" />
                 </div>
                 <div>
                   <p class="text-center">N° <span class="pokemon-id"></span></p>
@@ -268,13 +183,7 @@
             <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
               <div class="section-pokemons-div container d-flex flex-column justify-content-center align-items-center">
                 <div class="pb-2">
-                  <img
-                    src=""
-                    alt=""
-                    class="bg-white rounded-5"
-                    width="300"
-                    height="300"
-                  />
+                  <img src="" alt="" class="bg-white rounded-5" width="300" height="300" />
                 </div>
                 <div>
                   <p class="text-center">N° <span class="pokemon-id"></span></p>
@@ -292,12 +201,9 @@
       </section>
     </main>
 
-    <footer class="bg-white p-2">
+    <footer class="bg-white mt-3 p-2">
       <div class="container text-center">
-        <span
-          >Projeto desenvolvido por: Daniel, Larissa Teofilo e Patrick
-          Azevedo</span
-        >
+        <span>Projeto desenvolvido por: Daniel, Larissa Teofilo e Patrick Azevedo</span>
       </div>
     </footer>
   </body>
